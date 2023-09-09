@@ -11,11 +11,21 @@ function updateIncrement(e, r) {
     increment.addEventListener('click', () => {
         ++e
         display.innerText = e
+
+        if (e > 10) {
+            e = r
+            display.innerText = r
+        }
     })
 
     decrement.addEventListener('click', () => {
         --e
         display.innerText = e
+
+        if (e < 0) {
+            e = r
+            display.innerText = r
+        }
     })
 
     reset.addEventListener('click', () => {
