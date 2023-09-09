@@ -14,7 +14,7 @@ function updateIncrement(e, r) {
 
         if (e > 10) {
             e = r
-            display.innerText = r
+            display.innerText = e
         }
     })
 
@@ -24,7 +24,7 @@ function updateIncrement(e, r) {
 
         if (e < 0) {
             e = r
-            display.innerText = r
+            display.innerText = e
         }
     })
 
